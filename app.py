@@ -52,7 +52,12 @@ dashscope.base_http_api_url = 'https://dashscope-intl.aliyuncs.com/api/v1'
 st.set_page_config(page_title="SenSpark", page_icon="🌱", layout="wide")
 
 # font_path = r"C:\Users\cherr\Desktop\Master\DOTE6688I - Start Up\text_to_image\Full Version\V2\SourceHanSansHC-VF.ttf"
-font_path = r"/Users/administrator/Desktop/text_to_image/SourceHanSansHC-VF.ttf"
+# font_path = r"/Users/administrator/Desktop/text_to_image/SourceHanSansHC-VF.ttf"
+# Get the directory where app.py is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Link directly to the font file in that folder
+font_path = os.path.join(BASE_DIR, "SourceHanSansHC-VF.ttf")
 PDF_FONT_NAME = "Helvetica"
 font_loaded = False
 
