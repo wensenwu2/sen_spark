@@ -2236,8 +2236,13 @@ elif st.session_state.page == 'chinese':
         def extract_colored_components_with_pinyin(text):
             """【核心升級】解析漢字向量與 EvenOdd 挖空的同時，在上方動態生成對齊的彩色拼音"""
             try:
-                font_prop = FontProperties(family=['Microsoft JhengHei', 'Microsoft YaHei', 'PingFang HK', 'Heiti TC', 'sans-serif'])
-                
+                #font_prop = FontProperties(family=['Microsoft JhengHei', 'Microsoft YaHei', 'PingFang HK', 'Heiti TC', 'sans-serif'])
+                # Initialize font properties explicitly from the path file
+                font_prop = FontProperties(fname=font_path)
+
+                # Apply it globally to Matplotlib to avoid fallback errors
+                plt.rcParams['font.family'] = font_prop.get_name()
+                plt.rcParams['axes.unicode_minus'] = False  # Properly renders negative signs '-'
                 char_size = 1000
                 char_spacing = 1100 
                 
