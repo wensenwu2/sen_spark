@@ -58,7 +58,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Link directly to the font file in that folder
 font_path = os.path.join(BASE_DIR, "SourceHanSansHC-VF.ttf")
-font_path_2 = os.path.join(BASE_DIR, "NotoSansSC-Regular.ttf")
+font_path_2 = os.path.join(BASE_DIR, "NotoSansTC-Regular.ttf")
 PDF_FONT_NAME = "Helvetica"
 font_loaded = False
 
