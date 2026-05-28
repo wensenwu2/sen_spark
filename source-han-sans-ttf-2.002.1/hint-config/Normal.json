@@ -1,0 +1,16 @@
+{
+	"fontFormat": "@chlorophytum/font-format-ttf",
+	"hintStoreProvider": "@chlorophytum/hint-store-provider-file",
+
+	"hintPlugin": "@chlorophytum/hm-combine",
+	"hintOptions": {
+		"passes": [
+			{
+				"hintPlugin": "@chlorophytum/hm-ideograph",
+				"hintOptions": {
+					"CANONICAL_STEM_WIDTH": 0.06
+				}
+			}
+		]
+	}
+}

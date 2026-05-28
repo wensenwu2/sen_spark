@@ -1,0 +1,21 @@
+{
+	"name": "source-han-sans-ttf",
+	"version": "2.002.1",
+	"private": true,
+	"dependencies": {
+		"@chlorophytum/cli": "^0.20.0",
+		"@chlorophytum/font-format-ttf": "^0.20.0",
+		"@chlorophytum/hint-store-provider-file": "^0.20.0",
+		"@chlorophytum/hm-combine": "^0.20.0",
+		"@chlorophytum/hm-ideograph": "^0.20.5",
+		"fs-extra": "^9.0.1",
+		"colors": "^1.4.0",
+		"verda": "^1.1.2",
+		"which": "^2.0.2",
+		"otb-ttc-bundle": "^0.10.31"
+	},
+	"scripts": {
+		"install": "node checkenv",
+		"build": "verda -f verdafile.js"
+	}
+}
