@@ -58,6 +58,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Link directly to the font file in that folder
 font_path = os.path.join(BASE_DIR, "SourceHanSansHC-VF.ttf")
+font_path_2 = os.path.join(BASE_DIR, "NotoSansSC-Regular.ttf")
 PDF_FONT_NAME = "Helvetica"
 font_loaded = False
 
@@ -2238,7 +2239,7 @@ elif st.session_state.page == 'chinese':
             try:
                 #font_prop = FontProperties(family=['Microsoft JhengHei', 'Microsoft YaHei', 'PingFang HK', 'Heiti TC', 'sans-serif'])
                 # Initialize font properties explicitly from the path file
-                font_prop = FontProperties(fname=font_path)
+                font_prop = FontProperties(fname=font_path_2)
 
                 # Apply it globally to Matplotlib to avoid fallback errors
                 plt.rcParams['font.family'] = font_prop.get_name()
